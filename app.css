@@ -1,0 +1,127 @@
+body{
+    background-color: #fff;
+    margin: 0   ;
+}
+
+.header {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.xs-hidden{
+    display: none;
+}
+@media (min-width:768px) {
+    .sm-hidden{
+        display: none;
+    }  
+    .xs-hidden{
+        display: inherit;
+    }
+}
+
+@media (max-width:768px) {
+/* div#containerTables {
+    max-height: 290px;
+    overflow-x: auto;
+    align-items: flex-start;
+} */
+}
+.flx{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+div#containerTables .card {
+    width: 32%;
+}
+/* div#containerTables .card {
+    width: 18%;
+} */
+.user {
+    color: #818f9b;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+  .user strong {
+    font-weight: bold;
+    color: #E5040E;
+  }
+  h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    width: auto;
+    color: #E5040E;
+    margin: 35px 0px;
+    line-height: 1.1;
+}
+h5 {
+    text-align: left;
+    font-weight: 900;
+    color: #818f9b;
+    font-size: 17px;
+    margin: 10px 20px;
+    
+ 
+}
+
+.data_container {
+    margin:0px auto 20px;
+    background-color: #FBFBFB;
+    padding: 10px;
+    border: 0px;
+    border-radius: 25px 25px 0px 0px;
+    padding-bottom: 50px;
+}
+
+.data_container .card  {
+    background-color: white;
+    box-shadow: 2px 6px 10px #d7d4d4a3;
+    margin: 20px 5px;
+
+}
+.data_container .card:last-child {
+    margin-bottom: 20px !important;
+}
+
+
+    .data_container .card h6 {
+        color: red;
+        font-size: 1.0rem;
+        margin: 0;
+        
+    text-transform: capitalize;
+}
+
+.data_container .card span {
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+}
+.data_container span.tooltip {
+    background: red;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    color: white !important;
+    border-radius: 50px;
+}
+
+footer {
+    position: fixed;
+    z-index: 99999;
+    background: transparent;
+    width: 100%;
+    left: 0;
+    height: 20px;
+    display: flex;
+    bottom: 0;
+    padding: 20px 0;
+    justify-content: center;
+    color: #bad;
+}
