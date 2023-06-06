@@ -190,7 +190,8 @@ function getProds(){
     return allProds
 }
 
-console.log(getProds())
+// VAR TODOS OS PRODUTOS console.log(getProds())
+
 admLogin=false
 
 function login(){
@@ -500,7 +501,7 @@ function  fluxo(){
 
             <div id="dataOrder"> 
                 <div id="subTotal">Total da Compra</div>
-                <button key='`+key+`' onclick="closeOrder(event)" class="closeOrder">Fechar Conta</button>
+                <button key='`+key+`' type='`+tipo+`' onclick="closeOrder(event)" class="closeOrder">Fechar Conta</button>
             </div> 
        `;
 
@@ -528,7 +529,7 @@ function  fluxo(){
                        if(cupomContainer){
                         var idTabelCupom=mOrder.idPedido
                         obs=mOrder.observacao
-                            console.log(mOrder.data)
+                            
                         cupomContainer.innerHTML+=` 
                             
                                 <table id=`+mOrder.idPedido+`>
@@ -591,7 +592,7 @@ function  fluxo(){
                         if(cupomContainer){
                             var idTabelCupom=dOrder.idPedido
                             obs=dOrder.observacao
-    
+                        
                             cupomContainer.innerHTML+=` 
                                 
                                     <table id=`+dOrder.idPedido+`>
@@ -601,7 +602,7 @@ function  fluxo(){
                                         </tr>
                                         <tr>
                                             <th>DATA:`+dOrder.data+`/ HORA `+dOrder.hora+`</th> 
-                                            <th> </th> 
+                                            <th> Nome:`+deliMap.name.toUpperCase()+`</th> 
                                         </tr> 
                                         
                                          <tr>
@@ -785,7 +786,13 @@ function  fluxo(){
 
             </div>
 
-
+            <div id="msgLoad" class="msgLoad">
+            <img src="assets/img/logo.png">
+            <h3>Aguarde </h3>
+            <p>Fechando conta ..</p>
+            <img src="assets/img/loading.gif">
+            <!-- <button>Cancelar</button>  -->
+          </div>
                 <!--Container de dados -->
                 <div class="data_container">
 

@@ -103,12 +103,49 @@ h5 {
 }
 
 
-      .card h6 {
+.card h6 {
         color: red;
         font-size: 1.0rem;
         margin: 0;
         
     text-transform: capitalize;
+}
+.card svg{
+    color: red;
+}
+div#detailsAccounts {
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    height: 100%;
+}
+div#closedsContainer .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button.getDatails {
+    width: 130px;
+    height: 40px;
+    text-align: right;
+}
+.msgLoad {
+    position: fixed;
+    background: #f1f2f3;
+    color: #ff253a;
+    display: none;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99999;
+    padding: 50px 0 0;
 }
 .card strong {
     color: #818f9b;
