@@ -743,16 +743,63 @@ function  fluxo(){
                         <i class="fa-regular fa-user" style="color:red;"></i>
                         Olá <strong>`+credentials+`</strong>, bem-vindo! 
                     </div> 
-                    <h2>Administre seus pedidos aqui.</h2>
+                    <h2>Gerêncie seus pedidos aqui.</h2>
                 </div>
 
+                <div id="addOrdersContainer">
+
+                    <div class="controls">
+                        <button onclick="neworders()">
+                            <svg class="svg-inline--fa fa-chevron-left" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-left"></i> Font Awesome fontawesome.com -->  
+                        </button>
+                        <button onclick="neworders()"> 
+                            <svg class="svg-inline--fa fa-xmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg><!-- <i class="fa-solid fa-xmark"></i> Font Awesome fontawesome.com --> 
+                        </button>    
+                    </div>
+
+                    <h6>Adicionar pedido.</h6>
+
+
+
+                    <div id='contentSearch'>
+                            <form>
+                                <label>
+                                    Encontre Produtos..
+                                </label>
+
+                                <input id='serchInput' placeholder='Digite sua busca..'>
+                            </form> 
+
+                            <div id='searchResult'>  </div>
+                            <div id='cartList'>  </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
                 <div id="menu">
+
                     <div  onclick='menuToggle()'>
                         <i class="fa-solid fa-bars"></i>      
                     </div>
+
                     <div id="ftotal"> R$ 0,00   </div>
-                    <div id=" ">..</div>
+
+                    <div onclick='neworders()' >
+                        <button>
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <span>novo</span>
+                        </button>
+
+                    </div>
                 </div>
+
+
 
                 <div id="menu-nav" class="menu-nav">
                     <div class="controls">
@@ -811,7 +858,18 @@ function  fluxo(){
                                 <h6>Delivery</h6>   
                                 <span id="nSalesDeliverys" class="price">..</span>
                             </div>    
-                    </div>    
+                        </div>   
+                        <div class="flx">
+                            <div class="card red"> 
+                                <span id="" class="tooltip">..</span>
+
+                                <h6>Contas Fechadas hoje</h6>   
+                                <span id="" class="price">..</span>
+                            </div>
+                            <div class="card"> 
+                              
+                            </div>    
+                        </div>     
                 </div>    
 
 
