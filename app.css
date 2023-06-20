@@ -54,6 +54,27 @@ div#containerTables .card {
 /* div#containerTables .card {
     width: 18%;
 } */
+.total button {
+    display: none;
+}
+div#cartList .controls {
+    display: none;
+}
+.total {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 32px 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+select:focus-visible {
+    outline: none !important;
+}
 .user {
     color: #818f9b;
     padding: 5px;
@@ -77,12 +98,14 @@ h5 {
     text-align: left;
     font-weight: 900;
     color: #818f9b;
-    font-size: 17px;
+    font-size: 21px;
     margin: 10px 20px;
     
  
 }
-
+div#closedsContainer   {
+   color: #818f9b;
+}
 .data_container {
     margin:0px auto 20px;
     background-color: #FBFBFB;
@@ -90,19 +113,87 @@ h5 {
     border: 0px;
     border-radius: 25px 25px 0px 0px;
     padding-bottom: 50px;
+} 
+div#contentdata table { 
+    width: 90%;
+    margin: 0px auto;
 }
+div#contentdata tr {
+    text-align: left;
+}
+div#contentdata table tr th {
+    padding:5px;
+}
+.down {
+    transform: rotate(85deg);
+    display: inline-flex;
+    margin: 0 5px;
+}
+.down svg {
+    color: white !important;
+    font-size: 11px;
+}
+div#contentdata {
+    overflow: auto;
+    max-height: 80vh;
+}
+.viewDetails {
+    display: none;
+    background: #eee;
+    border-radius: 15px;
+}
+ 
 
+.viewDetails  table tr th {
+    padding: 2px !important;
+}
 .data_container .card  {
     background-color: white;
-    box-shadow: 2px 6px 10px #d7d4d4a3;
+    box-shadow: 2px 6px 10px #dbdbdbeb;
     margin: 20px 5px;
 
+}
+.viewDetails table {
+    font-size: .8rem;
+}
+
+button.btn-inline-datails {
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+    background: blue;
+    width: 100%; 
+border-radius: 15px;
+    display:flex;
+justify-content: space-between;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 15px;
+    margin: 0 auto;
+    
 }
 .data_container .card:last-child {
     margin-bottom: 20px !important;
 }
+form.closeForm .mylabel.select {
+    margin: 5vh auto;
+}
 
+form.closeForm label {
+    background: transparent;
+    width: auto;
+    padding: 10px;
+}
 
+form#formOrderNew .mylabel {
+    margin: 3px;
+    background: transparent;
+}
+div#whatsappId {
+    width: 100%;
+    background: transparent;
+}
 .card h6 {
         color: red;
         font-size: 1.0rem;
@@ -187,22 +278,49 @@ footer {
     border-bottom: 1px solid #eee;
     padding: 15px 0;
 }
-
+p {
+    color: #818f9b;
+}
 .listprod > div {
-    width: 15%;
+    width: 100%;
     font-weight: bold;
     font-size: 1.2rem;
 
+}
+
+.qtd-prod{
+    width: 25%!important;
+}
+.price-prod {
+    text-align: right;
+    width: 30% !important;
+}
+.whatsbutton{
+    background: red;
+    float: right;
+    width: 100px;
+    color: white;
+    border-radius: 30px;
+    padding: 5px
+
+}
+.whatsbutton svg{
+    color: white;
+    margin: 0 5px;
+}
+div#containerReportsCloseds {
+    padding: 0 20px;
 }
 div#addOrdersContainer {
     position: fixed;
     left: 0;
     width: 100%;
-    background: white;
+    background: #FBFBFB;
     top: 0;
     height: 100%;
     z-index: 999;
     display: none;
+    overflow: auto !important;
     
 }
 div#addOrdersContainer h2 {
@@ -234,4 +352,30 @@ label {
     padding: 2px;
     position: relative;
     bottom: 3px;
+}
+
+
+@media(min-width:1200px){
+    div#msgLoadSend {
+     
+        width: 46%;
+        right: 0;
+        left: inherit;
+    }
+    div#addOrdersContainer {
+        
+     
+        right: 0;
+        left: inherit !important;
+        width: 45%; 
+ 
+        box-shadow: 2px 6px 10px #dbdbdbeb;    
+      
+    
+         
+    }
+    div#contentSearch {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
