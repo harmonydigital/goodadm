@@ -891,7 +891,7 @@ function  fluxo(){
                     <ul>
                         <li><a href="">Inicio</a></li>
                         <li><a target="_blank" href="closeds.html">Fechamentos</a></li>
-                        <li><a target="_blank" href="https://harmonydigital.github.io/goodupdate/">Alterar Cardápio</a></li>
+                        <li><a target="_blank" href="https://harmonydigital.github.io/goodvibesupdate/">Alterar Cardápio</a></li>
                     </ul>
                 </div>
 
