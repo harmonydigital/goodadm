@@ -84,6 +84,10 @@ closeOrder=(event)=>{
         })
       } 
 
+
+     
+       
+
        type=='mesa' ? closeTable()  :  closeDelivery() 
 
 
