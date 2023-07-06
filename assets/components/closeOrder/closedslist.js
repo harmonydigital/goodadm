@@ -140,23 +140,40 @@ function accoutsCloseds(closedData){
     let containerReports=document.getElementById('containerReportsCloseds')
     containerReports.innerHTML=' '
 
-    
+    containerReports.innerHTML+=`
+        
+                        <table>
+                            <thead>
+                                <tr> 
+                                    <th>DATA FECHAMENTO</th> 
+                                    <th>DETALHE</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="relatoriosBody"> 
+                               
+                            </tbody>
+
+                        </table>
+      
+        `;  
 
     closeddb.map((acountsMap)=>{
+       console.log(acountsMap)
        
-        containerReports.innerHTML+=`
 
-            <div class='card'>
-                <div>
-                <h6>Data: </h6><strong>`+acountsMap.data+`</strong>
-                </div>
+       var tbody=document.getElementById('relatoriosBody')
 
-                <button class="getDatails" onclick='getDetailsCloseAccounts(`+acountsMap.id+`)'>
-                    <i class="fa-solid fa-arrow-right"></i> 
-                </button>
-            </div>
-        
-        `;
+       if(tbody){
+            console.log(tbody)
+
+            tbody.innerHTML+=`
+                    <tr> 
+                        <td>`+acountsMap.data+`</td> 
+                        <td><button class="btn-inline-details"><i class="fa-solid fa-right-to-bracket"></i></button></td>  
+                    </tr> 
+            `
+       }
     })
 
     // containerCloseds.innerHTML=`
